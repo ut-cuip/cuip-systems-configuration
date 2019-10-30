@@ -1,0 +1,73 @@
+{
+  "mapping": {
+    "vision_event": {
+      "properties": {
+        "camera_id": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "hit_counts": {
+          "type": "long"
+        },
+        "id": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "intersection": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "label": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "locations": {
+          "type": "nested",
+          "properties": {
+            "coords": {
+              "type": "float"
+            },
+            "location": {
+              "type": "text"
+            },
+            "timestamp": {
+              "type": "date"
+            }
+          }
+        },
+        "pole_id": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "timestamp": {
+          "type": "date"
+        }
+      }
+    }
+  }
+}
