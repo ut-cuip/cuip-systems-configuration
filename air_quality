@@ -1,0 +1,381 @@
+{
+  "mapping": {
+    "air_quality_raw": {
+      "properties": {
+        "Adc": {
+          "type": "float"
+        },
+        "DateTime": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "Geo": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "Id": {
+          "type": "long"
+        },
+        "Mem": {
+          "type": "long"
+        },
+        "SensorId": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "current_dewpoint_f": {
+          "type": "float"
+        },
+        "current_humidity": {
+          "type": "long"
+        },
+        "current_temp_f": {
+          "type": "long"
+        },
+        "hardwarediscovered": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "hardwareversion": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "httpsends": {
+          "type": "long"
+        },
+        "httpsuccess": {
+          "type": "long"
+        },
+        "key1_count": {
+          "type": "long"
+        },
+        "key1_count_b": {
+          "type": "long"
+        },
+        "key1_response": {
+          "type": "long"
+        },
+        "key1_responseCode": {
+          "type": "long"
+        },
+        "key1_responseCode_b": {
+          "type": "long"
+        },
+        "key1_responseCode_date": {
+          "type": "long"
+        },
+        "key1_responseCode_date_b": {
+          "type": "long"
+        },
+        "key1_response_b": {
+          "type": "long"
+        },
+        "key1_response_date": {
+          "type": "long"
+        },
+        "key1_response_date_b": {
+          "type": "long"
+        },
+        "key2_count": {
+          "type": "long"
+        },
+        "key2_count_b": {
+          "type": "long"
+        },
+        "key2_response": {
+          "type": "long"
+        },
+        "key2_responseCode": {
+          "type": "long"
+        },
+        "key2_responseCode_b": {
+          "type": "long"
+        },
+        "key2_responseCode_date": {
+          "type": "long"
+        },
+        "key2_responseCode_date_b": {
+          "type": "long"
+        },
+        "key2_response_b": {
+          "type": "long"
+        },
+        "key2_response_date": {
+          "type": "long"
+        },
+        "key2_response_date_b": {
+          "type": "long"
+        },
+        "lat": {
+          "type": "float"
+        },
+        "latency": {
+          "type": "long"
+        },
+        "latency_b": {
+          "type": "long"
+        },
+        "location": {
+          "type": "geo_point"
+        },
+        "loggingrate": {
+          "type": "long"
+        },
+        "lon": {
+          "type": "float"
+        },
+        "memcs": {
+          "type": "long"
+        },
+        "memfb": {
+          "type": "long"
+        },
+        "memfrag": {
+          "type": "long"
+        },
+        "nicename": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "p_0_3_um": {
+          "type": "float"
+        },
+        "p_0_3_um_b": {
+          "type": "float"
+        },
+        "p_0_5_um": {
+          "type": "float"
+        },
+        "p_0_5_um_b": {
+          "type": "float"
+        },
+        "p_10_0_um": {
+          "type": "float"
+        },
+        "p_10_0_um_b": {
+          "type": "float"
+        },
+        "p_1_0_um": {
+          "type": "float"
+        },
+        "p_1_0_um_b": {
+          "type": "float"
+        },
+        "p_2_5_um": {
+          "type": "float"
+        },
+        "p_2_5_um_b": {
+          "type": "float"
+        },
+        "p_5_0_um": {
+          "type": "float"
+        },
+        "p_5_0_um_b": {
+          "type": "float"
+        },
+        "pa_latency": {
+          "type": "long"
+        },
+        "period": {
+          "type": "long"
+        },
+        "place": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "pm10_0_atm": {
+          "type": "float"
+        },
+        "pm10_0_atm_b": {
+          "type": "float"
+        },
+        "pm10_0_cf_1": {
+          "type": "float"
+        },
+        "pm10_0_cf_1_b": {
+          "type": "float"
+        },
+        "pm1_0_atm": {
+          "type": "float"
+        },
+        "pm1_0_atm_b": {
+          "type": "float"
+        },
+        "pm1_0_cf_1": {
+          "type": "float"
+        },
+        "pm1_0_cf_1_b": {
+          "type": "float"
+        },
+        "pm2": {
+          "properties": {
+            "5_aqi": {
+              "type": "long"
+            },
+            "5_aqi_b": {
+              "type": "long"
+            },
+            "5_aqi_color": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "5_aqi_color_b": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            }
+          }
+        },
+        "pm2_5_atm": {
+          "type": "float"
+        },
+        "pm2_5_atm_b": {
+          "type": "float"
+        },
+        "pm2_5_cf_1": {
+          "type": "float"
+        },
+        "pm2_5_cf_1_b": {
+          "type": "float"
+        },
+        "pressure": {
+          "type": "float"
+        },
+        "response": {
+          "type": "long"
+        },
+        "responseCode": {
+          "type": "long"
+        },
+        "responseCode_date": {
+          "type": "long"
+        },
+        "response_b": {
+          "type": "long"
+        },
+        "response_date": {
+          "type": "long"
+        },
+        "response_date_b": {
+          "type": "long"
+        },
+        "rssi": {
+          "type": "long"
+        },
+        "status_0": {
+          "type": "long"
+        },
+        "status_1": {
+          "type": "long"
+        },
+        "status_10": {
+          "type": "long"
+        },
+        "status_2": {
+          "type": "long"
+        },
+        "status_3": {
+          "type": "long"
+        },
+        "status_4": {
+          "type": "long"
+        },
+        "status_5": {
+          "type": "long"
+        },
+        "status_6": {
+          "type": "long"
+        },
+        "status_7": {
+          "type": "long"
+        },
+        "status_8": {
+          "type": "long"
+        },
+        "status_9": {
+          "type": "long"
+        },
+        "timestamp": {
+          "type": "date"
+        },
+        "ts_latency": {
+          "type": "long"
+        },
+        "ts_latency_b": {
+          "type": "long"
+        },
+        "ts_s_latency": {
+          "type": "long"
+        },
+        "ts_s_latency_b": {
+          "type": "long"
+        },
+        "uptime": {
+          "type": "long"
+        },
+        "version": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "wlstate": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        }
+      }
+    }
+  }
+}
